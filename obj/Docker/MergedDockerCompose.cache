@@ -1,0 +1,19 @@
+name: dockercompose12493396599973039500
+services:
+  productshop:
+    build:
+      context: D:\code\docker\New folder (2)\ProductShop
+      dockerfile: ProductShop/Dockerfile
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+      ASPNETCORE_HTTP_PORTS: "8080"
+    image: productshop
+    networks:
+      default: null
+    ports:
+      - mode: ingress
+        target: 8080
+        protocol: tcp
+networks:
+  default:
+    name: dockercompose12493396599973039500_default

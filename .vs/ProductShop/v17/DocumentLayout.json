@@ -1,0 +1,206 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\code\\docker\\New folder (2)\\ProductShop\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{9679C411-A11C-4504-A9EB-29B83B5D6F74}|docker-compose.dcproj|d:\\code\\docker\\new folder (2)\\productshop\\docker-compose.yml||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{9679C411-A11C-4504-A9EB-29B83B5D6F74}|docker-compose.dcproj|solutionrelative:docker-compose.yml||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2F7C886F-C705-4664-BB1B-87B62E94A1CF}|ProductShop\\ProductShop.csproj|d:\\code\\docker\\new folder (2)\\productshop\\productshop\\dockerfile||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{2F7C886F-C705-4664-BB1B-87B62E94A1CF}|ProductShop\\ProductShop.csproj|solutionrelative:productshop\\dockerfile||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2F7C886F-C705-4664-BB1B-87B62E94A1CF}|ProductShop\\ProductShop.csproj|d:\\code\\docker\\new folder (2)\\productshop\\productshop\\models\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2F7C886F-C705-4664-BB1B-87B62E94A1CF}|ProductShop\\ProductShop.csproj|solutionrelative:productshop\\models\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2F7C886F-C705-4664-BB1B-87B62E94A1CF}|ProductShop\\ProductShop.csproj|d:\\code\\docker\\new folder (2)\\productshop\\productshop\\productshop.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{2F7C886F-C705-4664-BB1B-87B62E94A1CF}|ProductShop\\ProductShop.csproj|solutionrelative:productshop\\productshop.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2F7C886F-C705-4664-BB1B-87B62E94A1CF}|ProductShop\\ProductShop.csproj|d:\\code\\docker\\new folder (2)\\productshop\\productshop\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{2F7C886F-C705-4664-BB1B-87B62E94A1CF}|ProductShop\\ProductShop.csproj|solutionrelative:productshop\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2F7C886F-C705-4664-BB1B-87B62E94A1CF}|ProductShop\\ProductShop.csproj|d:\\code\\docker\\new folder (2)\\productshop\\productshop\\migrations\\20250224041922_intialmigration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2F7C886F-C705-4664-BB1B-87B62E94A1CF}|ProductShop\\ProductShop.csproj|solutionrelative:productshop\\migrations\\20250224041922_intialmigration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2F7C886F-C705-4664-BB1B-87B62E94A1CF}|ProductShop\\ProductShop.csproj|d:\\code\\docker\\new folder (2)\\productshop\\productshop\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2F7C886F-C705-4664-BB1B-87B62E94A1CF}|ProductShop\\ProductShop.csproj|solutionrelative:productshop\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2F7C886F-C705-4664-BB1B-87B62E94A1CF}|ProductShop\\ProductShop.csproj|d:\\code\\docker\\new folder (2)\\productshop\\productshop\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2F7C886F-C705-4664-BB1B-87B62E94A1CF}|ProductShop\\ProductShop.csproj|solutionrelative:productshop\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2F7C886F-C705-4664-BB1B-87B62E94A1CF}|ProductShop\\ProductShop.csproj|d:\\code\\docker\\new folder (2)\\productshop\\productshop\\productshop.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}",
+      "RelativeMoniker": "D:0:0:{2F7C886F-C705-4664-BB1B-87B62E94A1CF}|ProductShop\\ProductShop.csproj|solutionrelative:productshop\\productshop.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2F7C886F-C705-4664-BB1B-87B62E94A1CF}|ProductShop\\ProductShop.csproj|d:\\code\\docker\\new folder (2)\\productshop\\productshop\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2F7C886F-C705-4664-BB1B-87B62E94A1CF}|ProductShop\\ProductShop.csproj|solutionrelative:productshop\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "docker-compose.yml",
+              "DocumentMoniker": "D:\\code\\docker\\New folder (2)\\ProductShop\\docker-compose.yml",
+              "RelativeDocumentMoniker": "docker-compose.yml",
+              "ToolTip": "D:\\code\\docker\\New folder (2)\\ProductShop\\docker-compose.yml",
+              "RelativeToolTip": "docker-compose.yml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACUAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003775|",
+              "WhenOpened": "2025-02-24T04:21:22.393Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Dockerfile",
+              "DocumentMoniker": "D:\\code\\docker\\New folder (2)\\ProductShop\\ProductShop\\Dockerfile",
+              "RelativeDocumentMoniker": "ProductShop\\Dockerfile",
+              "ToolTip": "D:\\code\\docker\\New folder (2)\\ProductShop\\ProductShop\\Dockerfile",
+              "RelativeToolTip": "ProductShop\\Dockerfile",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABgAAAAoAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-02-24T04:19:58.496Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "20250224041922_IntialMigration.cs",
+              "DocumentMoniker": "D:\\code\\docker\\New folder (2)\\ProductShop\\ProductShop\\Migrations\\20250224041922_IntialMigration.cs",
+              "RelativeDocumentMoniker": "ProductShop\\Migrations\\20250224041922_IntialMigration.cs",
+              "ToolTip": "D:\\code\\docker\\New folder (2)\\ProductShop\\ProductShop\\Migrations\\20250224041922_IntialMigration.cs",
+              "RelativeToolTip": "ProductShop\\Migrations\\20250224041922_IntialMigration.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAABpAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-24T04:19:22.584Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "ApplicationDbContext.cs",
+              "DocumentMoniker": "D:\\code\\docker\\New folder (2)\\ProductShop\\ProductShop\\Data\\ApplicationDbContext.cs",
+              "RelativeDocumentMoniker": "ProductShop\\Data\\ApplicationDbContext.cs",
+              "ToolTip": "D:\\code\\docker\\New folder (2)\\ProductShop\\ProductShop\\Data\\ApplicationDbContext.cs",
+              "RelativeToolTip": "ProductShop\\Data\\ApplicationDbContext.cs",
+              "ViewState": "AQIAAAoAAAAAAAAAAAAQwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-24T04:18:44.206Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Product.cs",
+              "DocumentMoniker": "D:\\code\\docker\\New folder (2)\\ProductShop\\ProductShop\\Models\\Product.cs",
+              "RelativeDocumentMoniker": "ProductShop\\Models\\Product.cs",
+              "ToolTip": "D:\\code\\docker\\New folder (2)\\ProductShop\\ProductShop\\Models\\Product.cs",
+              "RelativeToolTip": "ProductShop\\Models\\Product.cs",
+              "ViewState": "AQIAAAwAAAAAAAAAAAAYwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-24T04:16:23.902Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "D:\\code\\docker\\New folder (2)\\ProductShop\\ProductShop\\appsettings.json",
+              "RelativeDocumentMoniker": "ProductShop\\appsettings.json",
+              "ToolTip": "D:\\code\\docker\\New folder (2)\\ProductShop\\ProductShop\\appsettings.json",
+              "RelativeToolTip": "ProductShop\\appsettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-02-24T04:16:06.762Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ProductShop",
+              "DocumentMoniker": "D:\\code\\docker\\New folder (2)\\ProductShop\\ProductShop\\ProductShop.csproj",
+              "RelativeDocumentMoniker": "ProductShop\\ProductShop.csproj",
+              "ToolTip": "D:\\code\\docker\\New folder (2)\\ProductShop\\ProductShop\\ProductShop.csproj",
+              "RelativeToolTip": "ProductShop\\ProductShop.csproj",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABoAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-02-24T04:13:24.14Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "ProductController.cs",
+              "DocumentMoniker": "D:\\code\\docker\\New folder (2)\\ProductShop\\ProductShop\\Controllers\\ProductController.cs",
+              "RelativeDocumentMoniker": "ProductShop\\Controllers\\ProductController.cs",
+              "ToolTip": "D:\\code\\docker\\New folder (2)\\ProductShop\\ProductShop\\Controllers\\ProductController.cs",
+              "RelativeToolTip": "ProductShop\\Controllers\\ProductController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-24T04:18:42.806Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "ProductShop.http",
+              "DocumentMoniker": "D:\\code\\docker\\New folder (2)\\ProductShop\\ProductShop\\ProductShop.http",
+              "RelativeDocumentMoniker": "ProductShop\\ProductShop.http",
+              "ToolTip": "D:\\code\\docker\\New folder (2)\\ProductShop\\ProductShop\\ProductShop.http",
+              "RelativeToolTip": "ProductShop\\ProductShop.http",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003502|",
+              "WhenOpened": "2025-02-24T04:17:25.755Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\code\\docker\\New folder (2)\\ProductShop\\ProductShop\\Program.cs",
+              "RelativeDocumentMoniker": "ProductShop\\Program.cs",
+              "ToolTip": "D:\\code\\docker\\New folder (2)\\ProductShop\\ProductShop\\Program.cs",
+              "RelativeToolTip": "ProductShop\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAA+AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-24T04:15:56.117Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
