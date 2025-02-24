@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quản lý phòng trọ</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+        .logo {
+        width: 40px;
+        height: 40px;
+        margin: 10px;
+        border-radius: 50%;
+        vertical-align: middle; /* Add this to align the logo with the text */
+        }
+              
+        .logo + span {
+        font-size: 20px;
+        font-weight: bold;
+        margin-left: 10px; /* Add some space between the logo and the text */
+        vertical-align: middle; /* Align the text with the logo */
+    }
+
+        .sidebar {
+            width: 250px;
+            background: #333;
+            color: #fff;
+            height: 100vh;
+            position: fixed;
+            padding-top: 20px;
+            overflow-y: auto; /* Thêm cuộn dọc nếu nội dung quá dài */
+        }
+
+        .sidebar-header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .sidebar-header h2 {
+            margin: 0;
+        }
+
+        .sidebar-header p {
+            margin: 5px 0 0;
+        }
+
+        .sidebar-menu {
+            list-style: none;
+            padding: 0;
+        }
+
+        .sidebar-menu li {
+            padding: 10px 20px;
+        }
+
+        .sidebar-menu li a {
+            color: #fff;
+            text-decoration: none;
+            display: block;
+        }
+
+        .sidebar-menu li a:hover {
+            background: #444;
+        }
+
+        .main-content {
+            margin-left: 250px;
+            padding: 20px;
+        }
+
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .header h1 {
+            margin: 0;
+        }
+
+        .content {
+            background: #f9f9f9;
+            padding: 20px;
+            border-radius: 5px;
+        }
+        .input-group {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px; 
+        }
+
+        .input-group input {
+            flex: 1;
+            margin-right: 10px;
+        }
+        .btn {
+            padding: 10px 15px;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+
+        .btn-add {
+            background-color: #0f8de0;
+            color: #fff;
+            margin-bottom: 20px;
+        }
+        .btn-search {
+            background: #28a745; 
+            color: #fff; 
+            margin-right: 10px; 
+        }
+
+        .btn-edit {
+            background: #17a2b8;
+            color: #fff;
+            margin-right: 5px;
+        }
+
+        .btn-delete {
+            background: #dc3545;
+            color: #fff;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        table th, table td {
+            padding: 10px;
+            border: 1px solid #ddd;
+            text-align: left;
+        }
+
+        table th {
+            background: #f1f1f1;
+        }
+
+        /* Sửa styling cho modal */
+        .modal-content {
+            border-radius: 5px;
+        }
+
+        .modal-header {
+            border-bottom: 1px solid #ddd;
+        }
+    </style>
+</head>
+<body>
+    <div class="sidebar">
+        <div class="sidebar-header">
+            <img src="./ảnh/z5759880794835_ecbd93914807500e78d22e39cf1b75b9.jpg" alt="Logo" class="logo">
+            <span>Quản Lý Phòng Trọ</span>
+        </div>
+        <ul class="sidebar-menu">
+            <li><a href="indexadmin.html">Trang chủ</a></li>
+            <li><a href="QLKhachHang.html">Khách hàng</a></li>
+            <li><a href="QlPhongTro.html">Phòng trọ</a></li>
+            <li><a href="ThuePhong.html">Thuê phòng</a></li> 
+            <li><a href="HoaDon.html">Hóa đơn</a></li> 
+            <li><a href="TaiKhoan.html">Tài khoản</a></li> 
+            <li><a href="index.html">Đăng xuất</a></li>
+        </ul>
+    </div>
+    <div class="main-content">
+        <div class="header">
+            <h1>Khách hàng</h1>
+
+        </div>
+        <div class="content">
+            <button class="btn btn-add" id="btnAdd">Thêm mới</button>
+            <div class="input-group">
+                <input type="text" id="txts" placeholder="Tìm kiếm..." class="form-control">
+                <button class="btn btn-search" id="btnSearch">Tìm kiếm</button>
+            </div>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Mã KH</th>
+                        <th>Họ tên</th>
+                        <th>CMND</th>
+                        <th>SĐT</th>
+                        <th>Email</th>
+                        <th>Hành động</th>
+                        
+                    </tr>
+                </thead>
+                <tbody id="TableBody">
+                    <!-- Dữ liệu khách hàng sẽ được chèn vào đây -->
+                </tbody>
+            </table>
+            <div class="modal fade" id="Modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">Thêm khách hàng</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <form id="Form">
+                                <div class="form-group">
+                                    <label for="makh">Mã KH</label>
+                                    <input type="text" class="form-control" id="makh" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="hoten">Họ tên</label>
+                                    <input type="text" class="form-control" id="hoten" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="cmnd">CMND</label>
+                                    <input type="text" class="form-control" id="cmnd" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="sdt">SĐT</label>
+                                    <input type="text" class="form-control" id="sdt" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="email">Email</label>
+                                    <input type="email" class="form-control" id="email" required>
+                                </div>
+                                <input type="hidden" id="itemIndex">
+                            </form>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Hủy</button>
+                            <button type="button" class="btn btn-primary" id="save">Lưu</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+$(document).ready(function() {
+    let items = [];
+    function getDataFromAPI(){
+        var url="http://localhost:5071/Khachhang/GetList";
+        fetch(url,{
+            method:'GET',//Phương thức post để thêm dữ liệu mới
+            headers:{
+                'Content-Type':'application/json' // Định dạng dữ liệu gửi đi là Json
+            },
+        }).then(Response=>Response.json()) // chuyển đổi phản hồi từ json
+        .then(data=>{
+            items=data.data;
+            renderTable();
+        })
+        .catch((error) => {
+            console.error('Error:', error); // xử lý lỗi nếu có
+        });
+    }
+
+    function renderTable() {
+        $('#TableBody').empty();
+        items.forEach((item, index) => {
+            $('#TableBody').append(`
+                <tr>
+                    <td>${item.makh}</td>
+                    <td>${item.hoten}</td>
+                    <td>${item.cmnd}</td>
+                    <td>${item.sdt}</td>
+                    <td>${item.email}</td>
+                    <td>
+                        <button class="btn btn-info btnEdit" data-index="${index}">Sửa</button>
+                        <button class="btn btn-danger btnDelete" data-index="${index}">Xóa</button>
+                    </td>
+                </tr>
+            `);
+        });
+    }
+
+    $('#btnAdd').click(function() {
+        $('#Form')[0].reset();
+        $('#itemIndex').val('');
+        $('#exampleModalLabel').text('Thêm khách hàng');
+        $('#Modal').modal('show');
+    });
+
+    $('#save').click(function(event) { // thêm mới hoặc cập nhật
+        event.preventDefault();
+        const makh = $('#makh').val();
+        const hoten = $('#hoten').val();
+        const cmnd = $('#cmnd').val();
+        const sdt = $('#sdt').val();
+        const email = $('#email').val();
+        const index = $('#itemIndex').val();
+
+        const item = { makh, hoten, cmnd, sdt, email };
+        if (index) {
+            var url="http://localhost:5071/Khachhang/Update?makh=" + makh + "&hoten=" + hoten + "&cmnd=" + cmnd+ "&sdt=" + sdt+ "&email=" + email;
+            fetch(url,{
+                method:'POST',//Phương thức post để thêm dữ liệu mới
+                headers:{
+                    'Content-Type':'application/json' // Định dạng dữ liệu gửi đi là Json
+                },
+            }).then(Response=>Response.json()) // chuyển đổi phản hồi từ json
+            .then(data=>{
+                items[index] = item;
+                $('#Modal').modal('hide');
+                renderTable();
+            })
+            .catch((error) => {
+                console.error('Error:', error); // xử lý lỗi nếu có
+            });
+        } else {
+            var url="http://localhost:5071/Khachhang/Insert";
+            fetch(url,{
+                method:'POST',//Phương thức post để thêm dữ liệu mới
+                headers:{
+                    'Content-Type':'application/json' // Định dạng dữ liệu gửi đi là Json
+                },
+                body: JSON.stringify(item)
+            }).then(Response=>Response.json()) // chuyển đổi phản hồi từ json
+            .then(data=>{
+                items.push(item);
+                $('#Modal').modal('hide');
+                renderTable();
+            })
+            .catch((error) => {
+                console.error('Error:', error); // xử lý lỗi nếu có
+            });
+    }}); 
+
+    $(document).on('click', '.btnEdit', function() {
+        const index = $(this).data('index');
+        const item = items[index];
+        $('#makh').val(item.makh);
+        $('#hoten').val(item.hoten);
+        $('#cmnd').val(item.cmnd);
+        $('#sdt').val(item.sdt);
+        $('#email').val(item.email);
+        $('#itemIndex').val(index);
+        $('#exampleModalLabel').text('Sửa khách hàng');
+        $('#Modal').modal('show');
+    });
+    
+    $(document).on('click', '.btnDelete', function() {
+        if(confirm('Bạn có chắc muốn xóa khách hàng này?')==false) return;
+        const index = $(this).data('index');
+        const makh = items[index].makh;
+        var url="http://localhost:5071/Khachhang/Delete?makh=" + makh;
+        fetch(url,{
+            method:'POST',//Phương thức post để thêm dữ liệu mới
+            headers:{
+                'Content-Type':'application/json' // Định dạng dữ liệu gửi đi là Json
+            },
+        }).then(Response=>Response.json()) // chuyển đổi phản hồi từ json
+        .then(data=>{
+            items.splice(index, 1);
+            renderTable();
+        })
+        .catch((error) => {
+            console.error('Error:', error); // xử lý lỗi nếu có
+        });
+
+    });
+    function timkiem(){
+        var s=$.trim($('#txts').val());
+        if(s==''){
+            getDataFromAPI();
+        }else{
+            var url="http://localhost:5071/Khachhang/Search?s=" + s;
+            fetch(url,{
+                method:'GET',//Phương thức post để thêm dữ liệu mới
+                headers:{
+                    'Content-Type':'application/json' // Định dạng dữ liệu gửi đi là Json
+                },
+            }).then(Response=>Response.json()) // chuyển đổi phản hồi từ json
+            .then(data=>{
+                items= data.data;
+                renderTable();
+            })
+            .catch((error) => {
+                console.error('Error:', error); // xử lý lỗi nếu có
+            });
+        }
+    }
+    $(document).ready(function(){
+        getDataFromAPI();
+        
+        $('#btnSearch').click(function(){
+            timkiem();
+        })
+    })
+});
+
+    </script>
+</body>
+</html>
